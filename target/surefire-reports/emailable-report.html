@@ -9,19 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40,405</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">37,658</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m0">X</a></td><td rowspan="1">1653243355877</td><td rowspan="1">1</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m1">testAppleTitle</a></td><td rowspan="1">1653243360127</td><td rowspan="1">1151</td></tr><tr class="passedeven"><td><a href="#m2">testAppleURL</a></td><td rowspan="1">1653243365627</td><td rowspan="1">1099</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m3">testApplicationFormHeading</a></td><td rowspan="1">1653243350578</td><td rowspan="1">954</td></tr><tr class="passedeven"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m4">searchButton</a></td><td rowspan="1">1653243331380</td><td rowspan="1">2403</td></tr><tr class="passedeven"><td><a href="#m5">testEtsyLogo</a></td><td rowspan="1">1653243337827</td><td rowspan="1">2154</td></tr><tr class="passedeven"><td><a href="#m6">testInputBox</a></td><td rowspan="1">1653243344327</td><td rowspan="1">1955</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m0">testEtsySearchResult</a></td><td rowspan="1">1653253141263</td><td rowspan="1">3481</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m1">testAppleTitle</a></td><td rowspan="1">1653253154166</td><td rowspan="1">1250</td></tr><tr class="passedeven"><td><a href="#m2">testAppleURL</a></td><td rowspan="1">1653253159414</td><td rowspan="1">1104</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m3">testApplicationFormHeading</a></td><td rowspan="1">1653253148964</td><td rowspan="1">849</td></tr><tr class="passedeven"><td rowspan="2">scripts._03_EtsyTest</td><td><a href="#m4">testEtsyLogo</a></td><td rowspan="1">1653253127968</td><td rowspan="1">2803</td></tr><tr class="passedeven"><td><a href="#m5">testEtsySearch</a></td><td rowspan="1">1653253135018</td><td rowspan="1">2004</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">scripts._01_AppleTest#X</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure on purpose
-	at scripts._01_AppleTest.X(_01_AppleTest.java:44)
+<h2>Command line test</h2><h3 id="m0">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;meldas-MacBook-Pro.local&apos;, ip: &apos;fd4d:b131:412c:1:1c55:2def:8398:be73%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.4, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20G165, safari:platformVersion: 11.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 25CC964A-E148-47FC-8206-3F7DD2B28176
+*** Element info: {Using=css selector, value=.wt-display-inline-flex-sm&gt;span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at scripts._03_EtsyTest.testEtsySearchResult(_03_EtsyTest.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">scripts._02_TechGlobalTest#testApplicationFormHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._03_EtsyTest#searchButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">scripts._03_EtsyTest#testInputBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

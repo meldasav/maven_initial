@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import utilities.Driver;
 
@@ -11,11 +12,11 @@ public class _01_AppleTest extends Base{
     //Declare your driver
 
 
-   
+
 
 
     // 2. Validation of test - test
-    @Test
+    @Test(priority = 1)
     public void testAppleTitle() {
         driver.get("https://www.apple.com/");
 
@@ -29,15 +30,15 @@ public class _01_AppleTest extends Base{
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 
-    @Test
+    @Test(priority = 2)
     public void testAppleURL() {
         driver.get("https://www.apple.com/");
         String expectedURL = "https://www.apple.com/";
         String actualURL = driver.getCurrentUrl();
         Assert.assertEquals(actualURL,expectedURL);
     }
-
-    @Test
+   // @Ignore
+    @Test(enabled = false ,priority = 3,description = "TG092")
     public void X(){
         //fail method is used to fail a test on purpose
         //we use this for know issues

@@ -21,7 +21,7 @@ public class Driver {
     // 3. Get Driver and quit driver Method
     public static WebDriver getDriver() {
         if (driver == null) {
-            String browser = "chrome";
+            String browser = "safari";
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
