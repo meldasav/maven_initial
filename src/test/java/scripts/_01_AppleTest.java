@@ -11,7 +11,7 @@ public class _01_AppleTest extends Base{
     //Declare your driver
 
 
-    // 1. Initial set up - before each test
+   
 
 
     // 2. Validation of test - test
