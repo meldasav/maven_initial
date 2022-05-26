@@ -20,9 +20,11 @@ public class _04_GoogleSearchTest extends Base {
 
         googleSearchPage.searchInputBox.sendKeys("Apple" + Keys.ENTER);
 
-        String results = googleSearchResultPage.resultTag.getText(); //About 1,220,000,000 results (0.51 seconds)
+    //    String str= googleSearchResultPage.resultTag.getText(); //About 1,220,000,000 results (0.51 seconds)
+        String s = googleSearchResultPage.resultTag.getText().split(" ")[1].replaceAll(",", "");
+        Assert.assertTrue(Long.parseLong(s) > 0);
 
-        Assert.assertTrue(Long.parseLong(results.substring(results.indexOf(" ") + 1, results.indexOf("results") - 1).replace(",", "")) > 0);
+      // Assert.assertTrue(Long.parseLong(results.substring(results.indexOf(" ") + 1, results.indexOf("results") - 1).replace(",", "")) > 0);
     }
 
 }

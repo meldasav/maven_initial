@@ -23,11 +23,9 @@ public class _02_TechGlobalTest extends Base {
         driver.get("https://www.techglobalschool.com/apply-now");
         WebElement heading1 = driver.findElement(By.xpath("//span[text()='Application Form']"));
 
-        String expectedHeadingText = "Application Form";
-        String actualHeading1Text = heading1.getText();
 
-        Assert.assertTrue(heading1.isDisplayed());
-        Assert.assertEquals(actualHeading1Text, expectedHeadingText);
+        Assert.assertTrue(tgApplicationPage.heading1.isDisplayed());
+        Assert.assertEquals(tgApplicationPage.heading1.getText(),"Application Form");
     }
 }
     //3. Teardown
