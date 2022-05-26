@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pages.EtsySearchPage;
 import utilities.Driver;
 
 public class _03_EtsyTest extends Base {
-     /*
+/*
     1. Go to https://www.etsy.com/
     2. Validate Etsy logo is displayed
 
@@ -23,8 +25,10 @@ public class _03_EtsyTest extends Base {
     public void testEtsyLogo(){
         driver.get("https://www.etsy.com/");
 
-        WebElement logo = driver.findElement(By.id("logo"));
-        Assert.assertTrue(logo.isDisplayed());
+        //Get logo web element from EtsyPage
+        //WebElement logo = driver.findElement(By.id("logo"));
+
+        Assert.assertTrue(etsySearchPage.logo.isDisplayed());
     }
 
     /*
@@ -37,11 +41,12 @@ public class _03_EtsyTest extends Base {
     public void testEtsySearch(){
         driver.get("https://www.etsy.com/");
 
-        WebElement searchInputBox = driver.findElement(By.id("global-enhancements-search-query"));
-        WebElement searchButton = driver.findElement(By.cssSelector("button[data-id='gnav-search-submit-button']"));
+        //Get searchInputBox and searchButton web elements from EtsyPage
+        //WebElement searchInputBox = driver.findElement(By.id("global-enhancements-search-query"));
+        //WebElement searchButton = driver.findElement(By.cssSelector("button[data-id='gnav-search-submit-button']"));
 
-        Assert.assertTrue(searchInputBox.isDisplayed());
-        Assert.assertTrue(searchButton.isDisplayed());
+        Assert.assertTrue(etsySearchPage.searchInputBox.isDisplayed());
+        Assert.assertTrue(etsySearchPage.searchButton.isDisplayed());
     }
 
     /*
@@ -53,13 +58,17 @@ public class _03_EtsyTest extends Base {
     public void testEtsySearchResult(){
         driver.get("https://www.etsy.com/");
 
-        WebElement searchInputBox = driver.findElement(By.id("global-enhancements-search-query"));
+        //Get searchInputBox again from EtsySearchPage
+        //WebElement searchInputBox = driver.findElement(By.id("global-enhancements-search-query"));
 
-        searchInputBox.sendKeys("canvas painting" + Keys.ENTER);
+        etsySearchPage.searchInputBox.sendKeys("canvas painting" + Keys.ENTER);
 
-        WebElement resultTag = driver.findElement(By.cssSelector(".wt-display-inline-flex-sm>span"));
+        //Get resultTag again from EtsySearchPage
+        //WebElement resultTag = driver.findElement(By.cssSelector(".wt-display-inline-flex-sm>span"));
 
-        Assert.assertTrue(Integer.parseInt(resultTag.getText().replaceAll("[^0-9]", "")) > 0);
+        Assert.assertTrue(Integer.parseInt(etsySearchPage.resultTag.getText().replaceAll("[^0-9]", "")) > 0);
         // Assert.assertTrue(Integer.parseInt(resultTag.getText().substring(0, resultTag.getText().indexOf(" ")).replace(",", "")) > 0);
     }
+
+
 }

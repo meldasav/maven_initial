@@ -13,8 +13,6 @@ public class _01_AppleTest extends Base{
 
 
 
-
-
     // 2. Validation of test - test
     @Test(priority = 1)
     public void testAppleTitle() {
