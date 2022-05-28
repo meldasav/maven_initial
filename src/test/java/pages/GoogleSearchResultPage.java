@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class GoogleSearchResultPage {
 
 
-
     /**
      * How to implement Page Object Model Design Pattern
      * 1. Create a new class and locate your web elements there with a
@@ -24,16 +23,16 @@ public class GoogleSearchResultPage {
      * GoogleSearchResultPage
      */
 
-    public  GoogleSearchResultPage(WebDriver driver){
+    public GoogleSearchResultPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "result-stats")
     public WebElement resultTag;
+
+
+
 }
-
-
-
 
 
 

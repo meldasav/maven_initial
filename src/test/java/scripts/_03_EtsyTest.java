@@ -19,6 +19,11 @@ public class _03_EtsyTest extends Base {
 
     testEtsyLogo
      */
+    EtsySearchPage etsySearchPage;
+    @BeforeClass
+    public void setPage(){
+    etsySearchPage=new EtsySearchPage(driver);
+    }
 
     // 2. Validation of test - test
     @Test(priority = 1)
@@ -66,8 +71,8 @@ public class _03_EtsyTest extends Base {
         //Get resultTag again from EtsySearchPage
         //WebElement resultTag = driver.findElement(By.cssSelector(".wt-display-inline-flex-sm>span"));
 
-        String split = etsySearchPage.resultTag.getText().split(" ")[0].replaceAll(",", "");
-        Assert.assertTrue(Integer.parseInt(split) > 0);
+
+        Assert.assertTrue(Integer.parseInt( etsySearchPage.resultTag.getText().split(" ")[0].replaceAll(",", "")) > 0);
         //    Assert.assertTrue(Integer.parseInt(etsySearchPage.resultTag.getText().replaceAll("[^0-9]", "")) > 0);
         // Assert.assertTrue(Integer.parseInt(resultTag.getText().substring(0, resultTag.getText().indexOf(" ")).replace(",", "")) > 0);
     }

@@ -21,8 +21,6 @@ public class _02_TechGlobalTest extends Base {
     @Test(description = "TG123 : Validate Application from heading")
     public void testApplicationFormHeading() {
         driver.get("https://www.techglobalschool.com/apply-now");
-        WebElement heading1 = driver.findElement(By.xpath("//span[text()='Application Form']"));
-
 
         Assert.assertTrue(tgApplicationPage.heading1.isDisplayed());
         Assert.assertEquals(tgApplicationPage.heading1.getText(),"Application Form");
