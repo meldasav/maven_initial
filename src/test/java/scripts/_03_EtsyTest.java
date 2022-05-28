@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import pages.EtsySearchPage;
 import utilities.Driver;
 
+
 public class _03_EtsyTest extends Base {
 /*
     1. Go to https://www.etsy.com/
@@ -19,11 +20,6 @@ public class _03_EtsyTest extends Base {
 
     testEtsyLogo
      */
-    EtsySearchPage etsySearchPage;
-    @BeforeClass
-    public void setPage(){
-    etsySearchPage=new EtsySearchPage(driver);
-    }
 
     // 2. Validation of test - test
     @Test(priority = 1)

@@ -13,5 +13,11 @@ public class GoogleSearchPage {
 
     @FindBy(name = "q")
     public WebElement searchInputBox;
+
+
+
+    @FindBy(linkText = "Store")
+    public WebElement storeLink;
+
 }
 
