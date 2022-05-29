@@ -22,6 +22,8 @@ public class Base {
     GoogleSearchResultPage googleSearchResultPage;
     HeroAppPage heroAppPage;
     FacebookPage facebookPage;
+    ExpediaPage expediaPage;
+    EbayPage ebayPage;
 
 
     @BeforeMethod
@@ -35,6 +37,8 @@ public class Base {
         googleSearchResultPage=new GoogleSearchResultPage(driver);
         heroAppPage =new HeroAppPage(driver);
         facebookPage=new FacebookPage(driver);
+        expediaPage=new ExpediaPage(driver);
+        ebayPage=new EbayPage(driver);
     }
 
     @AfterMethod

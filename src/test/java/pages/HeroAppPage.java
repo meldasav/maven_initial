@@ -18,6 +18,14 @@ public class HeroAppPage {
     @FindBy(css = "#checkboxes>input")
     public List<WebElement> checkboxes;
 
+   @FindBy(linkText = "Dropdown")
+   public WebElement dropdownMenu;
+
+   @FindBy(id="dropdown")
+   public WebElement dropdownOption;
+
+
+
     public void clickInLink(String linkText){
         for (WebElement link : links) {
             if(link.getText().equals(linkText))  {

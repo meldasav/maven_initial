@@ -3,6 +3,7 @@ package scripts;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.DropdownHandler;
 import utilities.Waiter;
 
 public class _05_CheckBoxTest extends Base {
@@ -36,5 +37,9 @@ Deselect both "checkbox 1" and "checkbox 2" and validate they are deselected
             element.click();
             Assert.assertFalse(element.isSelected());
         }
+        driver.navigate().back();
+        heroAppPage.dropdownMenu.click();
+        heroAppPage.dropdownOption.click();
+        DropdownHandler.selectOptionByVisibleText(heroAppPage.dropdownMenu, "Option 1");
     }
 }
