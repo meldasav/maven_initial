@@ -1,6 +1,5 @@
 package pages;
 
-import javafx.scene.input.InputMethodTextRun;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,8 +27,9 @@ public class EtsySearchPage {
     @FindBy(css = ".wt-display-inline-flex-sm>span")
     public WebElement resultTag;
 
-    @FindBy(css = "ul[data-ui=top-nav-category-list] span")
-    public List<WebElement> mainHeaderLink;
+    @FindBy(css = "ul[data-ui='top-nav-category-list'] span")
+    public List<WebElement> mainHeaderLinks;
+
 }
 
 

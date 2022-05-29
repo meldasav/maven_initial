@@ -8,27 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class HeroAppPage {
-
-    public HeroAppPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+    public HeroAppPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
     }
+
     @FindBy(xpath = "//ul/li/a")
     public List<WebElement> links;
 
     @FindBy(css = "#checkboxes>input")
     public List<WebElement> checkboxes;
 
-   @FindBy(linkText = "Dropdown")
-   public WebElement dropdownMenu;
-
-   @FindBy(id="dropdown")
-   public WebElement dropdownOption;
-
-
-
-    public void clickInLink(String linkText){
+    public void clickOnLink(String linkText) {
         for (WebElement link : links) {
-            if(link.getText().equals(linkText))  {
+            if (link.getText().equals(linkText)) {
                 link.click();
                 break;
             }

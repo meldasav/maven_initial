@@ -21,9 +21,9 @@ public class Base {
     GoogleSearchPage googleSearchPage;
     GoogleSearchResultPage googleSearchResultPage;
     HeroAppPage heroAppPage;
-    FacebookPage facebookPage;
+    FaceBookPage faceBookPage;
     ExpediaPage expediaPage;
-    EbayPage ebayPage;
+
 
 
     @BeforeMethod
@@ -36,9 +36,9 @@ public class Base {
         googleSearchPage = new GoogleSearchPage(driver);
         googleSearchResultPage=new GoogleSearchResultPage(driver);
         heroAppPage =new HeroAppPage(driver);
-        facebookPage=new FacebookPage(driver);
+        faceBookPage=new FaceBookPage(driver);
         expediaPage=new ExpediaPage(driver);
-        ebayPage=new EbayPage(driver);
+
     }
 
     @AfterMethod

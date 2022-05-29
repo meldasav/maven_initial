@@ -7,12 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class FacebookPage {
-    public FacebookPage(WebDriver driver) {
+public class FaceBookPage {
+    public FaceBookPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "a[id^='u_0_2_']")
+    @FindBy (css = "a[id^='u_0_2_']")
     public WebElement createNewAccountLink;
 
     // Sign in form elements
@@ -46,7 +46,6 @@ public class FacebookPage {
     @FindBy(css = "button[name='websubmit']")
     public WebElement signUpButton;
 
-    @FindBy(id="reg_error_inner")
+    @FindBy(id = "reg_error_inner")
     public WebElement errorMessage;
 }
-

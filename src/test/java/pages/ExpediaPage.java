@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class ExpediaPage {
-
-    public ExpediaPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+    public ExpediaPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
     }
+
     @FindBy(css = "#primary-navigation button")
     public WebElement moreTravelDropdown;
 

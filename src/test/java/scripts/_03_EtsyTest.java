@@ -1,23 +1,13 @@
 package scripts;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.EtsySearchPage;
-import utilities.Driver;
-
 
 public class _03_EtsyTest extends Base {
-/*
+    /*
     1. Go to https://www.etsy.com/
     2. Validate Etsy logo is displayed
-
     testEtsyLogo
      */
 
@@ -35,7 +25,6 @@ public class _03_EtsyTest extends Base {
     /*
     1. Go to https://www.etsy.com/
     2. Validate Etsy search input box and search button is displayed
-
     testEtsySearch
      */
     @Test(priority = 3)
@@ -67,17 +56,30 @@ public class _03_EtsyTest extends Base {
         //Get resultTag again from EtsySearchPage
         //WebElement resultTag = driver.findElement(By.cssSelector(".wt-display-inline-flex-sm>span"));
 
-
-        Assert.assertTrue(Integer.parseInt( etsySearchPage.resultTag.getText().split(" ")[0].replaceAll(",", "")) > 0);
-        //    Assert.assertTrue(Integer.parseInt(etsySearchPage.resultTag.getText().replaceAll("[^0-9]", "")) > 0);
+        Assert.assertTrue(Integer.parseInt(etsySearchPage.resultTag.getText().replaceAll("[^0-9]", "")) > 0);
         // Assert.assertTrue(Integer.parseInt(resultTag.getText().substring(0, resultTag.getText().indexOf(" ")).replace(",", "")) > 0);
     }
 
-    @Test(priority = 4, description = "TC905:Validate Etsy main header")
+
+    /*
+    Given user navigates to “https://www.etsy.com/”
+    Then user should see below menu item links with expected texts
+    Father’s Day Gifts
+    Jewelry & Accessories
+    Clothing & Shoes
+    Home & Living
+    Wedding & Party
+    Toys & Entertainment
+    Art & Collectibles
+    Craft Supplies
+    Gifts & Gift Cards
+     */
+    @Test(priority = 4, description = "TC905: Validate Etsy main header")
     public void testMainHeader() {
         driver.get("https://www.etsy.com/");
+
         String[] expectedTexts = {
-                "Father's Day Gifts",
+                "Shop Home Sales!",
                 "Jewelry & Accessories",
                 "Clothing & Shoes",
                 "Home & Living",
@@ -86,11 +88,9 @@ public class _03_EtsyTest extends Base {
                 "Art & Collectibles",
                 "Craft Supplies",
                 "Gifts & Gift Cards"};
-        for (int i = 0; i < expectedTexts.length; i++) {
-            Assert.assertEquals(etsySearchPage.mainHeaderLink.get(i).getText(), expectedTexts[i]);
+
+        for (int i = 0; i < 9; i++) {
+            Assert.assertEquals(etsySearchPage.mainHeaderLinks.get(i).getText(), expectedTexts[i], "The expected text IS NOT displayed");
         }
     }
 }
-
-
-
