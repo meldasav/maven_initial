@@ -1,11 +1,13 @@
 package scripts;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FaceBookPage;
+import sun.awt.SunHints;
 import utilities.DropdownHandler;
 import utilities.Waiter;
 
@@ -97,7 +99,27 @@ public class _07_DropdownTest extends Base {
 
     @Test(priority = 3, description = "TC242: Validate Ebay dropdown")
     public void testEbayDropdown() {
+        driver.get("https://www.ebay.com/");
+        ebayDropDownPage.allCategoriesDropDown.click();
+        ebayDropDownPage.art.click();
+        ebayDropDownPage.search.click();
+
+        Assert.assertEquals(ebayDropDownPage.heading1.getText(), "Welcome to eBay Art");
+        Assert.assertEquals(ebayDropDownPage.heading2.getText(), "Find Prints, Paintings, Posters, and More.");
 
     }
 
+    //1-48 of over 60,000 results for "shoes"
+    @Test(priority = 4, description = "TC243: Validate Amazon dropdown")
+    public void testAmazonDropDown() {
+        driver.get("https://www.amazon.com/");
+        amazonDropDownPage.allDropDown.click();
+        amazonDropDownPage.baby.click();
+        amazonDropDownPage.searchBox.click();
+        amazonDropDownPage.searchBox.sendKeys("shoes");
+        amazonDropDownPage.searchIcon.click();
+
+        String validateResult = "1-48 of over 60,000 results for \"shoes\"";
+        Assert.assertTrue(Long.parseLong(validateResult.split(" ")[3].replace(",", "")) > 0);
+    }
 }

@@ -23,6 +23,8 @@ public class Base {
     HeroAppPage heroAppPage;
     FaceBookPage faceBookPage;
     ExpediaPage expediaPage;
+    EbayDropDownPage ebayDropDownPage;
+    AmazonDropDownPage amazonDropDownPage;
 
 
 
@@ -38,7 +40,8 @@ public class Base {
         heroAppPage =new HeroAppPage(driver);
         faceBookPage=new FaceBookPage(driver);
         expediaPage=new ExpediaPage(driver);
-
+        ebayDropDownPage=new EbayDropDownPage(driver);
+        amazonDropDownPage=new AmazonDropDownPage(driver);
     }
 
     @AfterMethod
