@@ -30,6 +30,8 @@ public class EtsySearchPage {
     @FindBy(css = "ul[data-ui='top-nav-category-list'] span")
     public List<WebElement> mainHeaderLinks;
 
+
+
 }
 
 

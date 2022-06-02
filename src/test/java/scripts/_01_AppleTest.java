@@ -1,7 +1,6 @@
 package scripts;
 
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 public class _01_AppleTest extends Base {
