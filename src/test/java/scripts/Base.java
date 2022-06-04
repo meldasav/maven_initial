@@ -26,7 +26,7 @@ public class Base {
     EbayDropDownPage ebayDropDownPage;
     AmazonDropDownPage amazonDropDownPage;
     SoftAssert softAssert;
-
+    TechGlobalPage techGlobalPage;
 
 
 
@@ -45,6 +45,7 @@ public class Base {
         expediaPage=new ExpediaPage(driver);
         ebayDropDownPage=new EbayDropDownPage(driver);
         amazonDropDownPage=new AmazonDropDownPage(driver);
+        techGlobalPage=new TechGlobalPage(driver);
     }
 
     @AfterMethod

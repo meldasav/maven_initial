@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Regression" class="navigator-link">
-              <span class="suite-name border-failed">Regression</span>
+            <a href="#" class="navigator-link" panel-name="suite-Smoke">
+              <span class="suite-name border-passed">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Regression" class="navigator-link ">
-                    <span>Regression.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Smoke">
+                    <span>Smoke.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Smoke">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Smoke">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Smoke">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Smoke">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Smoke">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Regression" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Smoke">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,70 +91,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._07_DropdownTest" class="method navigator-link" hash-for-method="testExpediaDropdowns">testExpediaDropdowns</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods passed suite-Regression"> (hide)</a> <!-- hide-methods passed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods passed suite-Smoke"> (hide)</a> <!-- hide-methods passed suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods passed suite-Smoke"> (show)</a> <!-- show-methods passed suite-Smoke -->
                     </span>
-                    <div class="method-list-content passed suite-Regression">
+                    <div class="method-list-content passed suite-Smoke">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._07_DropdownTest" class="method navigator-link" hash-for-method="testAmazonDropDown">testAmazonDropDown</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._01_AppleTest" hash-for-method="testAppleTitle">testAppleTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._01_AppleTest" class="method navigator-link" hash-for-method="testAppleURL">testAppleURL</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._02_TechGlobalTest" hash-for-method="testApplicationFormHeading">testApplicationFormHeading</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._05_CheckBoxTest" class="method navigator-link" hash-for-method="testCheckBoxInHeroApp">testCheckBoxInHeroApp</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._03_EtsyTest" hash-for-method="testEtsyLogo">testEtsyLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._07_DropdownTest" class="method navigator-link" hash-for-method="testEbayDropdown">testEbayDropdown</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._03_EtsyTest" hash-for-method="testEtsySearch">testEtsySearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._06_RadioButtonTest" class="method navigator-link" hash-for-method="testFacebookGenderRadioButtons">testFacebookGenderRadioButtons</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._03_EtsyTest" hash-for-method="testEtsySearchResult">testEtsySearchResult</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._04_GoogleSearchTest" class="method navigator-link" hash-for-method="testGoogleStoreLink">testGoogleStoreLink</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke" title="scripts._04_GoogleSearchTest" hash-for-method="testGoogleSearch">testGoogleSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._03_EtsyTest" class="method navigator-link" hash-for-method="testMainHeader">testMainHeader</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="scripts._07_DropdownTest" class="method navigator-link" hash-for-method="testUnsecurePasswordErrorMessage">testUnsecurePasswordErrorMessage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Regression -->
+                    </div> <!-- method-list-content passed suite-Smoke -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -165,81 +141,25 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">scripts._07_DropdownTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testExpediaDropdowns">
-                  </a> <!-- testExpediaDropdowns -->
-                  <span class="method-name">testExpediaDropdowns</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;meldas-MacBook-Pro.local&apos;, ip: &apos;fd4d:b131:412c:1:1c55:2def:8398:be73%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:56968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9768dc196f85d72f4fd35d72795a0b8f
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy9.click(Unknown Source)
-	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(TC578: Validate Expedia dropdowns)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
-          <div class="suite-Regression-class-passed">
+        <div panel-name="suite-Smoke" class="panel Smoke">
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">scripts._06_RadioButtonTest</span>
+              <span class="class-name">scripts._02_TechGlobalTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFacebookGenderRadioButtons">
-                  </a> <!-- testFacebookGenderRadioButtons -->
-                  <span class="method-name">testFacebookGenderRadioButtons</span>
+                  <a name="testApplicationFormHeading">
+                  </a> <!-- testApplicationFormHeading -->
+                  <span class="method-name">testApplicationFormHeading</span>
                   <em>
-(TC234: Validate Facebook gender radio buttons)                  </em>
+(TC123: Validate Application form heading)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">scripts._04_GoogleSearchTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testGoogleStoreLink">
-                  </a> <!-- testGoogleStoreLink -->
-                  <span class="method-name">testGoogleStoreLink</span>
-                  <em>
-(TC123: Validate Google Store link)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
+          </div> <!-- suite-Smoke-class-passed -->
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">scripts._03_EtsyTest</span>
@@ -247,33 +167,45 @@ Session ID: 9768dc196f85d72f4fd35d72795a0b8f
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMainHeader">
-                  </a> <!-- testMainHeader -->
-                  <span class="method-name">testMainHeader</span>
-                  <em>
-(TC905: Validate Etsy main header)                  </em>
+                  <a name="testEtsyLogo">
+                  </a> <!-- testEtsyLogo -->
+                  <span class="method-name">testEtsyLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEtsySearch">
+                  </a> <!-- testEtsySearch -->
+                  <span class="method-name">testEtsySearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEtsySearchResult">
+                  </a> <!-- testEtsySearchResult -->
+                  <span class="method-name">testEtsySearchResult</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
+          </div> <!-- suite-Smoke-class-passed -->
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">scripts._05_CheckBoxTest</span>
+              <span class="class-name">scripts._04_GoogleSearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckBoxInHeroApp">
-                  </a> <!-- testCheckBoxInHeroApp -->
-                  <span class="method-name">testCheckBoxInHeroApp</span>
+                  <a name="testGoogleSearch">
+                  </a> <!-- testGoogleSearch -->
+                  <span class="method-name">testGoogleSearch</span>
                   <em>
-(TC001: Validate checkbox in hero app)                  </em>
+(TC765: Validate Google search)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
+          </div> <!-- suite-Smoke-class-passed -->
+          <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">scripts._01_AppleTest</span>
@@ -281,200 +213,147 @@ Session ID: 9768dc196f85d72f4fd35d72795a0b8f
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAppleURL">
-                  </a> <!-- testAppleURL -->
-                  <span class="method-name">testAppleURL</span>
+                  <a name="testAppleTitle">
+                  </a> <!-- testAppleTitle -->
+                  <span class="method-name">testAppleTitle</span>
                   <em>
-(TC873)                  </em>
+(TC345)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">scripts._07_DropdownTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAmazonDropDown">
-                  </a> <!-- testAmazonDropDown -->
-                  <span class="method-name">testAmazonDropDown</span>
-                  <em>
-(TC243: Validate Amazon dropdown)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testEbayDropdown">
-                  </a> <!-- testEbayDropdown -->
-                  <span class="method-name">testEbayDropdown</span>
-                  <em>
-(TC242: Validate Ebay dropdown)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUnsecurePasswordErrorMessage">
-                  </a> <!-- testUnsecurePasswordErrorMessage -->
-                  <span class="method-name">testUnsecurePasswordErrorMessage</span>
-                  <em>
-(TC763: Validate FaceBook sign in error message for password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-        </div> <!-- panel Regression -->
-        <div panel-name="test-xml-Regression" class="panel">
+          </div> <!-- suite-Smoke-class-passed -->
+        </div> <!-- panel Smoke -->
+        <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/meldasav/IdeaProjects/testng_framework/Regression.xml</span>
+            <span class="header-content">/Users/meldasav/IdeaProjects/testng_framework/Smoke.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Regression&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;All Functionalities&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Smoke&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Critical Functionalities&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;scripts._01_AppleTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;testAppleTitle&quot;/&gt;
+          &lt;include name=&quot;testAppleTitle&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- scripts._01_AppleTest --&gt;
-      &lt;class name=&quot;scripts._03_EtsyTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testMainHeader&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- scripts._03_EtsyTest --&gt;
+      &lt;class name=&quot;scripts._02_TechGlobalTest&quot;/&gt;
       &lt;class name=&quot;scripts._04_GoogleSearchTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;testGoogleSearch&quot;/&gt;
+          &lt;include name=&quot;testGoogleSearch&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- scripts._04_GoogleSearchTest --&gt;
-      &lt;class name=&quot;scripts._05_CheckBoxTest&quot;/&gt;
-      &lt;class name=&quot;scripts._06_RadioButtonTest&quot;/&gt;
-      &lt;class name=&quot;scripts._07_DropdownTest&quot;/&gt;
+      &lt;class name=&quot;scripts._03_EtsyTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;testMainHeader&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- scripts._03_EtsyTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- All Functionalities --&gt;
-&lt;/suite&gt; &lt;!-- Regression --&gt;
+  &lt;/test&gt; &lt;!-- Critical Functionalities --&gt;
+&lt;/suite&gt; &lt;!-- Smoke --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Regression" class="panel">
+        <div panel-name="testlist-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Regression</span>
+            <span class="header-content">Tests for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">All Functionalities (6 classes)</span>
+                <span class="test-name">Critical Functionalities (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Regression" class="panel">
+        <div panel-name="group-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Regression</span>
+            <span class="header-content">Groups for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Regression" class="panel">
+        <div panel-name="times-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Regression</span>
+            <span class="header-content">Times for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Regression');
-function tableData_Regression() {
+suiteTableInitFunctions.push('tableData_Smoke');
+function tableData_Smoke() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testExpediaDropdowns')
-data.setCell(0, 2, 'scripts._07_DropdownTest')
-data.setCell(0, 3, 19449);
+data.setCell(0, 1, 'testEtsySearchResult')
+data.setCell(0, 2, 'scripts._03_EtsyTest')
+data.setCell(0, 3, 4220);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFacebookGenderRadioButtons')
-data.setCell(1, 2, 'scripts._06_RadioButtonTest')
-data.setCell(1, 3, 9065);
+data.setCell(1, 1, 'testGoogleSearch')
+data.setCell(1, 2, 'scripts._04_GoogleSearchTest')
+data.setCell(1, 3, 3354);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCheckBoxInHeroApp')
-data.setCell(2, 2, 'scripts._05_CheckBoxTest')
-data.setCell(2, 3, 9048);
+data.setCell(2, 1, 'testEtsyLogo')
+data.setCell(2, 2, 'scripts._03_EtsyTest')
+data.setCell(2, 3, 2260);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAmazonDropDown')
-data.setCell(3, 2, 'scripts._07_DropdownTest')
-data.setCell(3, 3, 6632);
+data.setCell(3, 1, 'testEtsySearch')
+data.setCell(3, 2, 'scripts._03_EtsyTest')
+data.setCell(3, 3, 2071);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testUnsecurePasswordErrorMessage')
-data.setCell(4, 2, 'scripts._07_DropdownTest')
-data.setCell(4, 3, 4816);
+data.setCell(4, 1, 'testApplicationFormHeading')
+data.setCell(4, 2, 'scripts._02_TechGlobalTest')
+data.setCell(4, 3, 1343);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testEbayDropdown')
-data.setCell(5, 2, 'scripts._07_DropdownTest')
-data.setCell(5, 3, 3528);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGoogleStoreLink')
-data.setCell(6, 2, 'scripts._04_GoogleSearchTest')
-data.setCell(6, 3, 2275);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testMainHeader')
-data.setCell(7, 2, 'scripts._03_EtsyTest')
-data.setCell(7, 3, 2193);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testAppleURL')
-data.setCell(8, 2, 'scripts._01_AppleTest')
-data.setCell(8, 3, 817);
-window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
+data.setCell(5, 1, 'testAppleTitle')
+data.setCell(5, 2, 'scripts._01_AppleTest')
+data.setCell(5, 3, 741);
+window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
-              <div id="times-div-Regression">
-              </div> <!-- times-div-Regression -->
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-Smoke">
+              </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Regression" class="panel">
+        <div panel-name="reporter-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Regression</span>
+            <span class="header-content">Reporter output for Smoke</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Regression" class="panel">
+        <div panel-name="ignored-methods-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">scripts._04_GoogleSearchTest</span>
+              <span class="ignored-class-name">scripts._03_EtsyTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testGoogleSearch</span>
+                <span class="ignored-method-name">testMainHeader</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">scripts._03_EtsyTest</span>
+              <span class="ignored-class-name">scripts._04_GoogleSearchTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testEtsySearchResult</span>
-                <br/>
-                <span class="ignored-method-name">testEtsySearch</span>
-                <br/>
-                <span class="ignored-method-name">testEtsyLogo</span>
+                <span class="ignored-method-name">testGoogleStoreLink</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">scripts._01_AppleTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testAppleTitle</span>
+                <span class="ignored-method-name">testAppleURL</span>
                 <br/>
                 <span class="ignored-method-name">X</span>
                 <br/>
@@ -482,7 +361,7 @@ return data;
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Regression" class="panel">
+        <div panel-name="chronological-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -494,125 +373,81 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testAppleURL</span>
-                <span class="method-start">2111 ms</span>
+                <span class="method-name">testAppleTitle</span>
+                <span class="method-start">2763 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">2930 ms</span>
+                <span class="method-start">3506 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">scripts._03_EtsyTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scripts._02_TechGlobalTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6170 ms</span>
+                <span class="method-start">6749 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testMainHeader</span>
-                <span class="method-start">7509 ms</span>
+                <span class="method-name">testApplicationFormHeading</span>
+                <span class="method-start">8176 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9702 ms</span>
+                <span class="method-start">9519 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">scripts._04_GoogleSearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">12972 ms</span>
+                <span class="method-start">12664 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testGoogleStoreLink</span>
-                <span class="method-start">14331 ms</span>
+                <span class="method-name">testGoogleSearch</span>
+                <span class="method-start">13959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">16606 ms</span>
+                <span class="method-start">17313 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">scripts._05_CheckBoxTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scripts._03_EtsyTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">19829 ms</span>
+                <span class="method-start">20470 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCheckBoxInHeroApp</span>
-                <span class="method-start">21111 ms</span>
+                <span class="method-name">testEtsyLogo</span>
+                <span class="method-start">21827 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30159 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts._06_RadioButtonTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">33313 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testFacebookGenderRadioButtons</span>
-                <span class="method-start">34612 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">43677 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">scripts._07_DropdownTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">46828 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testUnsecurePasswordErrorMessage</span>
-                <span class="method-start">48137 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">52953 ms</span>
+                <span class="method-start">24088 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">56070 ms</span>
+                <span class="method-start">27358 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testExpediaDropdowns</span>
-                <span class="method-start">57407 ms</span>
+                <span class="method-name">testEtsySearch</span>
+                <span class="method-start">28730 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">76861 ms</span>
+                <span class="method-start">30801 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">80481 ms</span>
+                <span class="method-start">34105 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testEbayDropdown</span>
-                <span class="method-start">81834 ms</span>
+                <span class="method-name">testEtsySearchResult</span>
+                <span class="method-start">35495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">85362 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">88634 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testAmazonDropDown</span>
-                <span class="method-start">89965 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">96597 ms</span>
+                <span class="method-start">39715 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
