@@ -21,8 +21,9 @@ public class Driver {
     // 3. Get Driver and quit driver Method
     public static WebDriver getDriver() {
         if (driver == null) {
-            String browser = "chrome";
-            switch (browser) {
+            //The browser defined below with String is hard coded
+         //   String browser = "chrome";
+            switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -39,7 +40,7 @@ public class Driver {
                     throw new NotFoundException("Browser is not defined property");
             }
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(Long.parseLong(ConfigReader.getProperty("implicitWait")), TimeUnit.SECONDS);
         }
         return driver;
     }
