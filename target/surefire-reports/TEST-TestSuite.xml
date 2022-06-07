@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.647" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="341.062" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2021.3.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,10 +64,30 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAppleTitle" classname="scripts._01_AppleTest" time="0.742"/>
-  <testcase name="testApplicationFormHeading" classname="scripts._02_TechGlobalTest" time="1.342"/>
-  <testcase name="testGoogleSearch" classname="scripts._04_GoogleSearchTest" time="3.353"/>
-  <testcase name="testEtsyLogo" classname="scripts._03_EtsyTest" time="2.261"/>
-  <testcase name="testEtsySearch" classname="scripts._03_EtsyTest" time="2.071"/>
-  <testcase name="testEtsySearchResult" classname="scripts._03_EtsyTest" time="4.22"/>
+  <testcase name="testAppleTitle" classname="scripts._01_AppleTest" time="0.851"/>
+  <testcase name="testApplicationFormHeading" classname="scripts._02_TechGlobalTest" time="2.046"/>
+  <testcase name="testGoogleSearch" classname="scripts._04_GoogleSearchTest" time="2.768"/>
+  <testcase name="testEtsyLogo" classname="scripts._03_EtsyTest" time="2.492"/>
+  <testcase name="testEtsySearch" classname="scripts._03_EtsyTest" time="3.928"/>
+  <testcase name="testEtsySearchResult" classname="scripts._03_EtsyTest" time="300.03">
+    <failure message="timeout: Timed out receiving message from renderer: 299.545&#10;  (Session info: chrome=102.0.5005.61)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;meldas-MacBook-Pro.local&apos;, ip: &apos;fd4d:b131:412c:1:1c55:2def:8398:be73%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;1.8.0_321&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:58337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fb8bed0a1389b86fbd9c0c512e7e180e" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 299.545
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'meldas-MacBook-Pro.local', ip: 'fd4d:b131:412c:1:1c55:2def:8398:be73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:58337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb8bed0a1389b86fbd9c0c512e7e180e
+	at scripts._03_EtsyTest.testEtsySearchResult(_03_EtsyTest.java:49)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 13951
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 06, 2022 10:52:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1654531031.046][SEVERE]: Timed out receiving message from renderer: 299.545
+[1654531031.049][SEVERE]: Timed out receiving message from renderer: 299.545
+]]></system-err>
+  </testcase>
 </testsuite>

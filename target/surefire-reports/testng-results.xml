@@ -1,87 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="10" passed="6">
+<testng-results skipped="0" failed="1" ignored="4" total="10" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="43087" started-at="2022-06-02T21:36:13 CDT" finished-at="2022-06-02T21:36:56 CDT">
+  <suite name="Smoke" duration-ms="340559" started-at="2022-06-06T10:51:33 CDT" finished-at="2022-06-06T10:57:14 CDT">
     <groups>
     </groups>
-    <test name="Critical Functionalities" duration-ms="43087" started-at="2022-06-02T21:36:13 CDT" finished-at="2022-06-02T21:36:56 CDT">
+    <test name="Critical Functionalities" duration-ms="340559" started-at="2022-06-06T10:51:33 CDT" finished-at="2022-06-06T10:57:14 CDT">
       <class name="scripts._03_EtsyTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1357" started-at="2022-06-02T21:36:33 CDT" finished-at="2022-06-02T21:36:34 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1307" started-at="2022-06-06T10:51:54 CDT" finished-at="2022-06-06T10:51:55 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testEtsyLogo()[pri:1, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsyLogo" duration-ms="2260" started-at="2022-06-02T21:36:34 CDT" finished-at="2022-06-02T21:36:37 CDT">
+        <test-method status="PASS" signature="testEtsyLogo()[pri:1, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsyLogo" duration-ms="2491" started-at="2022-06-06T10:51:55 CDT" finished-at="2022-06-06T10:51:57 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEtsyLogo -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3269" started-at="2022-06-02T21:36:37 CDT" finished-at="2022-06-02T21:36:40 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3350" started-at="2022-06-06T10:51:57 CDT" finished-at="2022-06-06T10:52:01 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1372" started-at="2022-06-02T21:36:40 CDT" finished-at="2022-06-02T21:36:41 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1280" started-at="2022-06-06T10:52:01 CDT" finished-at="2022-06-06T10:52:02 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testEtsySearch()[pri:3, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsySearch" duration-ms="2071" started-at="2022-06-02T21:36:41 CDT" finished-at="2022-06-02T21:36:43 CDT">
+        <test-method status="PASS" signature="testEtsySearch()[pri:3, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsySearch" duration-ms="3929" started-at="2022-06-06T10:52:02 CDT" finished-at="2022-06-06T10:52:06 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEtsySearch -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3303" started-at="2022-06-02T21:36:43 CDT" finished-at="2022-06-02T21:36:47 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3291" started-at="2022-06-06T10:52:06 CDT" finished-at="2022-06-06T10:52:09 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1390" started-at="2022-06-02T21:36:47 CDT" finished-at="2022-06-02T21:36:48 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="setup" is-config="true" duration-ms="1290" started-at="2022-06-06T10:52:09 CDT" finished-at="2022-06-06T10:52:11 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testEtsySearchResult()[pri:2, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsySearchResult" duration-ms="4220" started-at="2022-06-02T21:36:48 CDT" depends-on-methods="scripts._03_EtsyTest.testEtsySearch" finished-at="2022-06-02T21:36:52 CDT">
+        <test-method status="FAIL" signature="testEtsySearchResult()[pri:2, instance:scripts._03_EtsyTest@1ce92674]" name="testEtsySearchResult" duration-ms="300022" started-at="2022-06-06T10:52:11 CDT" depends-on-methods="scripts._03_EtsyTest.testEtsySearch" finished-at="2022-06-06T10:57:11 CDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 299.545
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'meldas-MacBook-Pro.local', ip: 'fd4d:b131:412c:1:1c55:2def:8398:be73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:58337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb8bed0a1389b86fbd9c0c512e7e180e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 299.545
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'meldas-MacBook-Pro.local', ip: 'fd4d:b131:412c:1:1c55:2def:8398:be73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:58337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb8bed0a1389b86fbd9c0c512e7e180e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at scripts._03_EtsyTest.testEtsySearchResult(_03_EtsyTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEtsySearchResult -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3349" started-at="2022-06-02T21:36:52 CDT" finished-at="2022-06-02T21:36:56 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@1ce92674]" name="teardown" is-config="true" duration-ms="3276" started-at="2022-06-06T10:57:11 CDT" finished-at="2022-06-06T10:57:14 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- scripts._03_EtsyTest -->
       <class name="scripts._02_TechGlobalTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="setup" is-config="true" duration-ms="1427" started-at="2022-06-02T21:36:19 CDT" finished-at="2022-06-02T21:36:21 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="setup" is-config="true" duration-ms="1296" started-at="2022-06-06T10:51:40 CDT" finished-at="2022-06-06T10:51:41 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testApplicationFormHeading()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="testApplicationFormHeading" duration-ms="1343" started-at="2022-06-02T21:36:21 CDT" description="TC123: Validate Application form heading" finished-at="2022-06-02T21:36:22 CDT">
+        <test-method status="PASS" signature="testApplicationFormHeading()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="testApplicationFormHeading" duration-ms="2045" started-at="2022-06-06T10:51:41 CDT" description="TC123: Validate Application form heading" finished-at="2022-06-06T10:51:43 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplicationFormHeading -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="teardown" is-config="true" duration-ms="3145" started-at="2022-06-02T21:36:22 CDT" finished-at="2022-06-02T21:36:25 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._02_TechGlobalTest@73ad2d6]" name="teardown" is-config="true" duration-ms="3166" started-at="2022-06-06T10:51:43 CDT" finished-at="2022-06-06T10:51:46 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- scripts._02_TechGlobalTest -->
       <class name="scripts._01_AppleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._01_AppleTest@3fee9989]" name="setup" is-config="true" duration-ms="2762" started-at="2022-06-02T21:36:13 CDT" finished-at="2022-06-02T21:36:15 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._01_AppleTest@3fee9989]" name="setup" is-config="true" duration-ms="2453" started-at="2022-06-06T10:51:33 CDT" finished-at="2022-06-06T10:51:36 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testAppleTitle()[pri:1, instance:scripts._01_AppleTest@3fee9989]" name="testAppleTitle" duration-ms="741" started-at="2022-06-02T21:36:15 CDT" description="TC345" finished-at="2022-06-02T21:36:16 CDT">
+        <test-method status="PASS" signature="testAppleTitle()[pri:1, instance:scripts._01_AppleTest@3fee9989]" name="testAppleTitle" duration-ms="849" started-at="2022-06-06T10:51:36 CDT" description="TC345" finished-at="2022-06-06T10:51:37 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAppleTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._01_AppleTest@3fee9989]" name="teardown" is-config="true" duration-ms="3241" started-at="2022-06-02T21:36:16 CDT" finished-at="2022-06-02T21:36:19 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._01_AppleTest@3fee9989]" name="teardown" is-config="true" duration-ms="3187" started-at="2022-06-06T10:51:37 CDT" finished-at="2022-06-06T10:51:40 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- scripts._01_AppleTest -->
       <class name="scripts._04_GoogleSearchTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._04_GoogleSearchTest@7085bdee]" name="setup" is-config="true" duration-ms="1295" started-at="2022-06-02T21:36:25 CDT" finished-at="2022-06-02T21:36:27 CDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts._04_GoogleSearchTest@7085bdee]" name="setup" is-config="true" duration-ms="1339" started-at="2022-06-06T10:51:46 CDT" finished-at="2022-06-06T10:51:48 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testGoogleSearch()[pri:1, instance:scripts._04_GoogleSearchTest@7085bdee]" name="testGoogleSearch" duration-ms="3354" started-at="2022-06-02T21:36:27 CDT" description="TC765: Validate Google search" finished-at="2022-06-02T21:36:30 CDT">
+        <test-method status="PASS" signature="testGoogleSearch()[pri:1, instance:scripts._04_GoogleSearchTest@7085bdee]" name="testGoogleSearch" duration-ms="2768" started-at="2022-06-06T10:51:48 CDT" description="TC765: Validate Google search" finished-at="2022-06-06T10:51:50 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearch -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._04_GoogleSearchTest@7085bdee]" name="teardown" is-config="true" duration-ms="3156" started-at="2022-06-02T21:36:30 CDT" finished-at="2022-06-02T21:36:33 CDT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts._04_GoogleSearchTest@7085bdee]" name="teardown" is-config="true" duration-ms="3185" started-at="2022-06-06T10:51:50 CDT" finished-at="2022-06-06T10:51:54 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
