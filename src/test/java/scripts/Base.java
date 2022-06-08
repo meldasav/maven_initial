@@ -27,6 +27,8 @@ public class Base {
     AmazonDropDownPage amazonDropDownPage;
     SoftAssert softAssert;
     TechGlobalPage techGlobalPage;
+    AmazonSignInPage amazonSignInPage;
+    RediffHomePage rediffHomePage;
 
 
 
@@ -46,6 +48,8 @@ public class Base {
         ebayDropDownPage=new EbayDropDownPage(driver);
         amazonDropDownPage=new AmazonDropDownPage(driver);
         techGlobalPage=new TechGlobalPage(driver);
+        amazonSignInPage=new AmazonSignInPage(driver);
+        rediffHomePage=new RediffHomePage(driver);
     }
 
     @AfterMethod

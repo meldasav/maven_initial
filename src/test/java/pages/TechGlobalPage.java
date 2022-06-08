@@ -28,6 +28,12 @@ public class TechGlobalPage {
     @FindBy(xpath = "//div[@id='comp-khwayqh22']/button")
     public WebElement subscribeButton;
 
+    @FindBy(css="#img_1_comp-kixnxkbc img")
+    public WebElement instagramIcon;
+
+    @FindBy(css = "#img_0_comp-kixnxkbc img")
+    public WebElement faceBookIcon;
+
 
     public void subscribe(String fName, String lName, String email) {
         firstName.sendKeys(fName);

@@ -113,7 +113,16 @@ Validate "You successfully clicked an alert" message is displayed with its text
 
     @Test(priority = 5, description = "TASK-5 - Amazon Address Modal")
     public void testAmazonAddressModal() {
-
+        driver.get("https://www.amazon.com/");
+        amazonSignInPage.addressSelector.click();
+        Assert.assertTrue(amazonSignInPage.chooseYourLocation.isDisplayed(), "Choose your location");
+        String zipCode = "60585";
+        amazonSignInPage.zipCodeInputBox.sendKeys(zipCode);
+        amazonSignInPage.applyButton.click();
+        Assert.assertTrue(amazonSignInPage.deliveryMessage.getText().contains(zipCode));
+        Waiter.pause(2);
 
     }
+
+
 }
