@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 341.062 sec <<< FAILURE! - in TestSuite
-testEtsySearchResult(scripts._03_EtsyTest)  Time elapsed: 300.03 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout: Timed out receiving message from renderer: 299.545
-  (Session info: chrome=102.0.5005.61)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'meldas-MacBook-Pro.local', ip: 'fd4d:b131:412c:1:1c55:2def:8398:be73%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/4r/tgl6cwq554n...}, goog:chromeOptions: {debuggerAddress: localhost:58337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fb8bed0a1389b86fbd9c0c512e7e180e
-	at scripts._03_EtsyTest.testEtsySearchResult(_03_EtsyTest.java:49)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.314 sec - in TestSuite
