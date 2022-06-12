@@ -19,7 +19,7 @@ public class _08_Alerts extends Base {
     public void testEtsySignInModel() {
         driver.get("https://www.etsy.com/");
         etsySearchPage.signInButton.click();
-        Assert.assertTrue(etsySearchPage.signInButton.isDisplayed());
+        Assert.assertTrue(etsySearchPage.signInModal.isDisplayed());
         Assert.assertEquals(etsySearchPage.signInModalHeading.getText(), "Sign in");
     }
 

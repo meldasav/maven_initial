@@ -39,7 +39,8 @@ public class EtsySearchPage {
     @FindBy(id = "join-neu-overlay-title")
     public WebElement signInModalHeading;
 
-
+    @FindBy(css = "div[data-aid='SOCIAL_SOCIAL_LINKS']>a")
+    public List<WebElement> socialLinks;
 
 }
 

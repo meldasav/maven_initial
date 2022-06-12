@@ -45,6 +45,17 @@ public class HeroAppPage {
     @FindBy(xpath = "//h3")
     public WebElement openingHeading3;
 
+    @FindBy(id = "file-upload")
+    public WebElement chooseFileInputBox;
+
+    @FindBy(id = "file-submit")
+    public WebElement uploadFileButton;
+
+    @FindBy(xpath = "//h3")
+    public WebElement fileUploadedH3;
+
+    @FindBy(id = "uploaded-files")
+    public WebElement uploadedFileText;
 
 
     public void clickOnLink(String linkText){
