@@ -1,5 +1,6 @@
 package scripts;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -28,19 +29,21 @@ public class Base {
     AmazonDropDownPage amazonDropDownPage;
     SoftAssert softAssert;
     Actions actions;
+    JavascriptExecutor js;
     TechGlobalPage techGlobalPage;
     AmazonSignInPage amazonSignInPage;
     RediffHomePage rediffHomePage;
     TecGlobalSchoolHomePage tecGlobalSchoolHomePage;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup(){
         driver = Driver.getDriver();
         explicitWait = new WebDriverWait(driver, 30);
         fluentWait = new FluentWait(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(2, TimeUnit.SECONDS).ignoring(Exception.class);
         softAssert=new SoftAssert();
         actions=new Actions(driver);
+        js=(JavascriptExecutor)driver;
         etsySearchPage = new EtsySearchPage(driver);
         tgApplicationPage = new TGApplicationPage(driver);
         googleSearchPage = new GoogleSearchPage(driver);
@@ -53,10 +56,10 @@ public class Base {
         techGlobalPage=new TechGlobalPage(driver);
         amazonSignInPage=new AmazonSignInPage(driver);
         rediffHomePage=new RediffHomePage(driver);
-        techGlobalPage=new TechGlobalPage(driver);
+        tecGlobalSchoolHomePage=new TecGlobalSchoolHomePage(driver);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
 
     public void teardown(){
         // TODO if there is a failure it will take a screen shot

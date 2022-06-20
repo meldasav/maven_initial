@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Waiter;
 
-public class _13_EtsyTest extends Base {
+public class _EtsyTest_ extends Base {
 /*
 Go to https://www.etsy.com/
 Hover over on "Jewelry & Accessories" menu item

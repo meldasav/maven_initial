@@ -38,6 +38,7 @@ public class _01_AppleTest extends Base {
         Assert.fail("Failure on purpose");
     }
 
+
     /*
     public static void main(String[] args) {
         // 1. Initial set up - before each test
@@ -52,4 +53,6 @@ public class _01_AppleTest extends Base {
         Driver.quitDriver();
     }
      */
+
+
 }

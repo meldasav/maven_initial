@@ -42,6 +42,10 @@ public class EtsySearchPage {
     @FindBy(css = "div[data-aid='SOCIAL_SOCIAL_LINKS']>a")
     public List<WebElement> socialLinks;
 
+    @FindBy(css = "css =ul[data-node-id='10855']>li")
+    public List<WebElement> jewelryAndAccessoriesItems;
+
+
 }
 
 
