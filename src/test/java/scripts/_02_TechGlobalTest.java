@@ -23,21 +23,12 @@ public class _02_TechGlobalTest extends Base {
     @Test
     public void testSubscribe() {
         driver.get("https://www.techglobalschool.com/");
-        System.out.println(techGlobalSubscribePage.subscribeHeading.getText());
+
         System.out.println(techGlobalSubscribePage.subscribeText.getText());
-
-        System.out.println(techGlobalSubscribePage.stayUpToDateHeading.getText());
         System.out.println(techGlobalSubscribePage.stayUpToDateText.getText());
-
         System.out.println(techGlobalSubscribePage.firstName.getAttribute("placeholder"));
-        System.out.println(techGlobalSubscribePage.firstNameInputBox.getAttribute("placeholder"));
-
         System.out.println(techGlobalSubscribePage.lastName.getAttribute("placeholder"));
-        System.out.println(techGlobalSubscribePage.lastNameInputBox.getAttribute("placeholder"));
-
         System.out.println(techGlobalSubscribePage.emailBox.getAttribute("placeholder"));
-
         System.out.println(techGlobalSubscribePage.subscribe_Button.getText());
-        System.out.println(techGlobalSubscribePage.subscribeButton.getText());
     }
 }

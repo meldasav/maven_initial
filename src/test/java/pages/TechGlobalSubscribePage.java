@@ -10,13 +10,13 @@ public class TechGlobalSubscribePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     //This Page factory introduces all the web elements to my driver that i am going to use in the scripts
-    @FindBy(css = "div[id='comp-keehv7pd1'] span:nth-child(1)")
+    @FindBy(css = "div[id='comp-keehv7pd1'] span>span")
     public WebElement subscribeText;
 
-    @FindBy(css="div[id='comp-keei0711'] span:nth-child(1)")
+    @FindBy(css="div[id='comp-keei0711'] span>span")
     public WebElement stayUpToDateText;
 
-    @FindBy(id="input_comp-khwayxk9")
+    @FindBy(css="#comp-khwayxk9 input")
     public WebElement firstName;
 
     @FindBy(css="div[id='comp-khwaz4h2'] input")
@@ -44,6 +44,26 @@ public class TechGlobalSubscribePage {
 
     @FindBy(css = "#comp-khwayqh22 button")
     public WebElement subscribeButton;
+
+    // 3 way
+
+    @FindBy(css = "div[id='comp-keehv7pd1']>h2>span")
+    public WebElement subscribeText1;
+
+    @FindBy(css = "div[id='comp-keei0711']>p>span")
+    public WebElement stayUpYoDateText1;
+
+    @FindBy(id = "input_comp-khwayxk9")
+    public WebElement firstNameInputBox1;
+
+    @FindBy(id = "input_comp-khwaz4h2")
+    public WebElement lastNameInputBox1;
+
+    @FindBy(id = "input_comp-khwb0zsz")
+    public WebElement emailInputBox1;
+
+    @FindBy(css = "#comp-khwayqh22>button")
+    public WebElement subscribeButton1;
 
 
 
