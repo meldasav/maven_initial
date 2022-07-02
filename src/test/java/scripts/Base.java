@@ -35,6 +35,7 @@ public class Base {
     RediffHomePage rediffHomePage;
     TecGlobalSchoolHomePage tecGlobalSchoolHomePage;
     TechGlobalSubscribePage techGlobalSubscribePage;
+    CvsHomePage cvsHomePage;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -59,6 +60,7 @@ public class Base {
         rediffHomePage=new RediffHomePage(driver);
         tecGlobalSchoolHomePage=new TecGlobalSchoolHomePage(driver);
         techGlobalSubscribePage=new TechGlobalSubscribePage();
+        cvsHomePage=new CvsHomePage();
     }
 
     @AfterMethod(alwaysRun = true)
