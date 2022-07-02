@@ -40,6 +40,7 @@ public class _07_DropdownTest extends Base {
 
         DropdownHandler.selectOptionByIndex(faceBookPage.monthDropdown, 3);
 
+
         //Select day as 1
         //Select daySelector = new Select(faceBookPage.dayDropdown);
         //daySelector.selectByVisibleText("1");

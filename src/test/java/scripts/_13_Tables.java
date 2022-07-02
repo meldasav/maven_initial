@@ -13,7 +13,7 @@ public class _13_Tables extends Base {
     public void testTableHeaders() {
         driver.get("https://the-internet.herokuapp.com/");
         heroAppPage.clickOnLink("Sortable Data Tables");
-        List<WebElement> tableHeading1 = driver.findElements(By.xpath("//table[@id='table1']//th"));
+        List<WebElement> tableHeading1 = driver.findElements(By.cssSelector("table[id='table1'] th"));
         String[] heading1texts = {"Last Name", "First Name", "Email", "Due", "Web Site", "Action"};
 
         for (int i = 0; i < tableHeading1.size(); i++) {
