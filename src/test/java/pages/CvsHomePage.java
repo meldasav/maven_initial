@@ -13,4 +13,16 @@ public class CvsHomePage {
     }
     @FindBy(css = "div[class='category-section'] a")
     public List<WebElement> categoryItems;
+
+    @FindBy(xpath = "(//ul[@class='ctas'])[1]//a")
+    public List<WebElement> cards;
+
+    public void clickOnCards(String text){
+        for (WebElement element : cards){
+            if(element.getText().equals(text)){
+                element.click();
+                break;
+            }
+        }
+    }
 }

@@ -2,6 +2,7 @@ package scripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.Waiter;
 
 public class _CVS_Test extends Base {
     @Test(priority = 1, description = "Validate Browse by category menuItems")
@@ -23,4 +24,11 @@ public class _CVS_Test extends Base {
         }
     }
 
+    @Test(priority = 2,description = "VALIDATE CVS 6 CARDS ")
+      public void cardsTest(){
+        driver.get("https://www.cvs.com/");
+        cvsHomePage.clickOnCards("Travel health");
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.cvs.com/minuteclinic/services/travel-health");
+
+    }
 }
