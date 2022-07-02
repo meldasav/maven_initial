@@ -14,19 +14,39 @@ public class TechGlobalSubscribePage {
     public WebElement subscribeText;
 
     @FindBy(css="div[id='comp-keei0711'] span:nth-child(1)")
-    public WebElement stayUpToDateTex;
+    public WebElement stayUpToDateText;
 
     @FindBy(id="input_comp-khwayxk9")
     public WebElement firstName;
 
-    @FindBy(id="comp-khwaz4h2")
+    @FindBy(css="div[id='comp-khwaz4h2'] input")
     public WebElement lastName;
 
-    @FindBy(id="comp-khwb0zsz")
+    @FindBy(css="div[id='comp-khwb0zsz'] input")
     public WebElement emailBox;
 
     @FindBy(css = "div[id='comp-khwayqh22']>button")
-    public WebElement button;
+    public WebElement subscribe_Button;
+
+
+    // second way
+    @FindBy(css = "#comp-keehv7pd1 h2")
+    public WebElement subscribeHeading;
+
+    @FindBy(css = "#comp-keei0711 p")
+    public WebElement stayUpToDateHeading;
+
+    @FindBy(id = "input_comp-khwayxk9")
+    public WebElement firstNameInputBox;
+
+    @FindBy(id = "input_comp-khwaz4h2")
+    public WebElement lastNameInputBox;
+
+    @FindBy(css = "#comp-khwayqh22 button")
+    public WebElement subscribeButton;
+
+
+
 
 
 }

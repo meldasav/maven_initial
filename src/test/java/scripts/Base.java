@@ -34,6 +34,7 @@ public class Base {
     AmazonSignInPage amazonSignInPage;
     RediffHomePage rediffHomePage;
     TecGlobalSchoolHomePage tecGlobalSchoolHomePage;
+    TechGlobalSubscribePage techGlobalSubscribePage;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -57,6 +58,7 @@ public class Base {
         amazonSignInPage=new AmazonSignInPage(driver);
         rediffHomePage=new RediffHomePage(driver);
         tecGlobalSchoolHomePage=new TecGlobalSchoolHomePage(driver);
+        techGlobalSubscribePage=new TechGlobalSubscribePage();
     }
 
     @AfterMethod(alwaysRun = true)
