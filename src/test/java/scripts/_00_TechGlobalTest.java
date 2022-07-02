@@ -2,15 +2,18 @@ package scripts;
 
 
 import org.testng.annotations.Test;
+import utilities.Waiter;
 
 
 public class _00_TechGlobalTest extends Base{
 
     @Test
     public void validationSubscribe(){
-        driver.get("https://www.techglobalschool.com/apply-now");
+        driver.get("https://www.techglobalschool.com/");
+        Waiter.pause(3);
 
-        techGlobalPage.subscribe("melda","sav","meldasav@gmail.com");
+        techGlobalSubscribePage.subscribe("melda","sav","meldasav@gmail.com");
+        Waiter.pause(3);
 
     }
 
