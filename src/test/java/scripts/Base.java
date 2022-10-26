@@ -36,6 +36,8 @@ public class Base {
     TecGlobalSchoolHomePage tecGlobalSchoolHomePage;
     TechGlobalSubscribePage techGlobalSubscribePage;
     CvsHomePage cvsHomePage;
+    AmazonDropDownPage1 amazonDropDownPage1;
+    ClearCoverPage clearCoverPage;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -61,6 +63,8 @@ public class Base {
         tecGlobalSchoolHomePage=new TecGlobalSchoolHomePage(driver);
         techGlobalSubscribePage=new TechGlobalSubscribePage();
         cvsHomePage=new CvsHomePage();
+        amazonDropDownPage1=new AmazonDropDownPage1();
+        clearCoverPage=new ClearCoverPage();
     }
 
     @AfterMethod(alwaysRun = true)

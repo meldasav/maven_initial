@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class _05_Groups {
 
-/*
+
     @Test(priority = 1,groups = "Login")
     public void test1() {
         System.out.println("This is test1");
@@ -30,5 +30,5 @@ public class _05_Groups {
         System.out.println("This is test5");
     }
 
- */
+
 }

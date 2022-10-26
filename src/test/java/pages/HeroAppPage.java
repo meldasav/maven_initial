@@ -81,7 +81,11 @@ public class HeroAppPage {
     @FindBy(id = "password")
     public WebElement password;
 
-    @FindBy(css = ".radius")
+    @FindBy(css = "")
     public WebElement loginButton;
+
+    public static boolean click(WebElement loginButton){
+        return loginButton.isDisplayed();
+    }
 
 }

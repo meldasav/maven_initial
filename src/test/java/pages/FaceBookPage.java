@@ -12,7 +12,7 @@ public class FaceBookPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (css = "a[id^='u_0_2_']")
+    @FindBy (css = "a[data-testid='open-registration-form-button']")
     public WebElement createNewAccountLink;
 
     // Sign in form elements

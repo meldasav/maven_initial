@@ -5,6 +5,7 @@
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_10_WindowHandles.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_EtsyTest_.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/utilities/Driver.java
+/Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_CVS_Test.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_06_RadioButtonTest.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_09_IFrames.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/testng_learning/_07C_Parallel.java
@@ -16,9 +17,11 @@
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_07_DropdownTest.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/RediffHomePage.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_03_EtsyTest.java
+/Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/TechGlobalSubscribePage.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/HeroAppPage.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_04_GoogleSearchTest.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/utilities/TestData.java
+/Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/CvsHomePage.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_15_GroupsTest.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/utilities/Waiter.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/GoogleSearchPage.java
@@ -46,5 +49,6 @@
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/testng_learning/_01_Annotations.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/testng_learning/_07B_Parallel.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/testng_learning/_05_Groups.java
+/Users/meldasav/IdeaProjects/testng_framework/src/test/java/pages/HeroOkuPage.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_01_AppleTest.java
 /Users/meldasav/IdeaProjects/testng_framework/src/test/java/scripts/_14_Scrolling.java

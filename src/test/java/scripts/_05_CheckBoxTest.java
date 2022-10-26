@@ -1,6 +1,8 @@
 package scripts;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Waiter;
@@ -44,5 +46,16 @@ public class _05_CheckBoxTest extends Base{
             element.click();
             Assert.assertFalse(element.isSelected());
         }
+    }
+
+    @Test
+    public  void testCheckBoxes(){
+        driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx");
+        driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
+        driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test");
+        driver.findElement(By.id("ctl00_MainContent_login_button")).click();
+        driver.findElements(By.cssSelector(".CheckUncheck>a")).get(0).click();
+        Waiter.pause(3);
+
     }
 }

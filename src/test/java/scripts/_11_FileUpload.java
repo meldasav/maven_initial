@@ -22,6 +22,7 @@ public class _11_FileUpload extends Base {
 
     }
 
+
     @Test(priority = 1, description = "File download")
     public void testFileDownload1() {
         driver.get("http://the-internet.herokuapp.com/");

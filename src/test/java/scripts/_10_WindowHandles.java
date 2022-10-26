@@ -46,7 +46,7 @@ public class _10_WindowHandles extends Base {
         heroAppPage.clickHereLink.click();
         String windowHandle1 = driver.getWindowHandle();
         for (String windowHandle : driver.getWindowHandles()) {
-            if (!windowHandle.equals(windowHandle1)) driver.switchTo().window(windowHandle1);
+            if (!windowHandle.equals(windowHandle1)) driver.switchTo().window(windowHandle);
         }
 
         Assert.assertEquals(heroAppPage.heading3.getText(), "New Window");

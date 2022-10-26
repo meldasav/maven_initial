@@ -31,7 +31,7 @@ public class _16_DataProvider extends Base {
     }
 
     @DataProvider
-    public Object[] getCredentials() {
+    public Object[][] getCredentials() {
         return new Object[][]{{"johndoe", "1234abcd"}, {"alexsmith", "1234"}, {"xsmith", "abc123"}};
     }
 }
